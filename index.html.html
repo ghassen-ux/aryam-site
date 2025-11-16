@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>New Year Desert Experience — TiniriCamp (3 days / 2 nights) | Aryam Voyage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Spend New Year’s in the heart of the Tunisian desert at TiniriCamp — curated workshops, art, and a closing night with DJ Guesmi. 3 days / 2 nights." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="New Year Desert Experience — TiniriCamp (3 days / 2 nights)" />
+  <meta property="og:description" content="Workshops, paint & proposal moments, and a closing night with DJ Guesmi in the Tunisian desert." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/mnt/data/e47149a2-531d-4c4b-adae-4ece9835e167.png" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 72 72%22><circle cx=%2236%22 cy=%2236%22 r=%2234%22 fill=%22%231565c0%22/><text x=%2236%22 y=%2244%22 text-anchor=%22middle%22 font-size=%2232%22 fill=%22white%22 font-family=%22Arial%2C sans-serif%22>AV</text></svg>">
+
+  <style>
+    :root{
+      --blue:#1565c0;        /* primary */
+      --blue-dark:#0d47a1;   /* dark blue */
+      --gold:#ffb300;        /* accent */
+      --bg:#f5f7fb;
+      --ink:#1f2933;
+      --muted:#637187;
+      --card:#ffffff;
+      --radius:16px;
+      --shadow:0 12px 28px rgba(15,23,42,.12);
+      --border:1px solid rgba(148,163,184,.28);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #e3f2fd 0, transparent 50%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout */
+    .container{max-width:1120px;margin:auto;padding:1.25rem 1.25rem 3rem}
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(245,247,251,.85);
+      backdrop-filter:saturate(140%) blur(10px);
+      border-bottom:var(--border)
+    }
+    .nav{
+      max-width:1120px;margin:auto;padding:.75rem 1.25rem;
+      display:flex;align-items:center;justify-content:space-between;gap:1rem
+    }
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800}
+    .badge{
+      width:36px;height:36px;border-radius:999px;
+      display:grid;place-items:center;color:#fff;
+      background:linear-gradient(135deg,var(--blue),var(--gold));
+      box-shadow:0 6px 16px rgba(21,101,192,.35)
+    }
+    .nav-cta{display:flex;gap:.6rem;align-items:center}
+    .btn{
+      border:none;border-radius:999px;padding:.65rem 1.15rem;cursor:pointer;
+      font-weight:700;font-size:.95rem;display:inline-flex;gap:.4rem;align-items:center;
+      transition:transform .18s ease, box-shadow .18s ease, background .18s ease
+    }
+    .btn-primary{
+      color:#fff;background:linear-gradient(135deg,var(--blue),var(--blue-dark));
+      box-shadow:0 8px 20px rgba(21,101,192,.35)
+    }
+    .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(21,101,192,.45)}
+    .btn-ghost{background:transparent;border:var(--border);color:var(--ink)}
+    .btn-ghost:hover{background:rgba(21,101,192,.06);border-color:rgba(21,101,192,.4)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:1.6rem;align-items:center;padding:1.25rem 0 2rem}
+    .eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    h1{font-size:clamp(1.8rem,2.6vw + 1rem,3rem);margin:.5rem 0}
+    .gradient{background:linear-gradient(90deg,var(--blue-dark),var(--gold));-webkit-background-clip:text;color:transparent}
+    .sub{color:var(--muted);max-width:40ch;margin:.75rem 0 1.25rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+    .card-hero{
+      border-radius:28px;background:radial-gradient(1000px 500px at 10% 10%, #0b1c3b 0, #020617 60%);
+      color:#e5e7eb;box-shadow:0 24px 60px rgba(2,6,23,.6);padding:1.15rem 1.25rem;position:relative;overflow:hidden
+    }
+    .chip{
+      display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;
+      padding:.35rem .7rem;border-radius:999px;border:1px solid rgba(148,163,184,.45);
+      background:rgba(2,6,23,.35)
+    }
+    .card-hero small{opacity:.85}
+
+    /* Sections */
+    section{margin:2.25rem 0}
+    .section-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1rem}
+    .section-head h2{margin:0;font-size:1.35rem}
+    .muted{color:var(--muted);font-size:.95rem}
+
+    /* Facts */
+    .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+    .fact{
+      background:var(--card);border:var(--border);border-radius:var(--radius);
+      padding:.9rem;box-shadow:var(--shadow);display:grid;gap:.25rem
+    }
+    .fact b{font-size:1.05rem}
+    .note{font-size:.85rem;color:var(--muted);margin-top:.5rem}
+
+    /* Itinerary */
+    .itinerary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+    .day{
+      background:var(--card);border:var(--border);border-radius:var(--radius);
+      padding:1rem;box-shadow:var(--shadow);display:grid;gap:.3rem
+    }
+    .day h3{margin:.1rem 0 .2rem;font-size:1.05rem}
+    .badge{font-size:.78rem;padding:.28rem .6rem;border:1px solid rgba(148,163,184,.45);background:#fff}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    .g-item{
+      border-radius:14px;overflow:hidden;background:#fff;border:var(--border);box-shadow:var(--shadow);
+      transform:translateZ(0)
+    }
+    .g-item img{width:100%;height:220px;object-fit:cover}
+    .g-item iframe{width:100%;height:220px;border:0}
+    .cap{font-size:.85rem;color:var(--muted);padding:.4rem .6rem}
+
+    /* Booking */
+    .booking{
+      background:rgba(248,250,252,.9);border:1px solid rgba(148,163,184,.4);
+      border-radius:20px;box-shadow:0 16px 36px rgba(15,23,42,.12);
+      display:grid;grid-template-columns:1.05fr 1fr;gap:1.2rem;padding:1.25rem
+    }
+    .sel{
+      border-right:1px dashed rgba(148,163,184,.45);padding-right:1rem
+    }
+    .sel h3{margin:.25rem 0 .35rem}
+    .sel p{margin:.15rem 0;color:var(--muted)}
+    form{display:grid;gap:.55rem}
+    label{font-weight:600;font-size:.9rem}
+    input,textarea,select{
+      width:100%;border-radius:10px;border:1px solid rgba(148,163,184,.7);padding:.55rem .7rem;
+      font:inherit;background:#fff;transition:border-color .15s ease, box-shadow .15s ease
+    }
+    input:focus,textarea:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 1px rgba(21,101,192,.25)}
+    textarea{min-height:84px;resize:vertical}
+    .row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+    .total{margin:.25rem 0 .4rem;font-weight:800;color:var(--blue-dark)}
+    .success{
+      display:none;margin-top:.5rem;font-size:.9rem;border-radius:10px;padding:.6rem .75rem;
+      background:rgba(46,125,50,.06);border:1px solid rgba(46,125,50,.35);color:#2e7d32
+    }
+    .hint{font-size:.82rem;color:var(--muted)}
+    footer{
+      margin-top:2rem;padding-top:1rem;border-top:var(--border);
+      display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem
+    }
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .card-hero{margin-top:.5rem}
+      .facts,.itinerary,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .booking{grid-template-columns:1fr}
+      .sel{border-right:0;border-bottom:1px dashed rgba(148,163,184,.45);padding-right:0;padding-bottom:1rem}
+    }
+    @media (max-width:560px){
+      .facts,.itinerary,.gallery{grid-template-columns:1fr}
+      .nav-cta{display:none}
+    }
+
+    /* Motion-safe */
+    @media (prefers-reduced-motion:no-preference){
+      .g-item:hover{transform:translateY(-2px)}
+    }
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">
+        <div class="badge">AV</div>
+        <div>Aryam Voyage</div>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="https://wa.me/21698135138" target="_blank" rel="noopener">WhatsApp us</a>
+        <a class="btn btn-primary" href="#booking">Book your place →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <!-- Featured hero tile — VIDEO version -->
+<button class="nyg-hero" type="button" data-open="4"
+        aria-label="Open video: New Year vibe — sample clip">
+  <video class="nyg-hero-video"
+         autoplay muted loop playsinline
+         preload="metadata"
+         poster="./assets/tiniri-1.png">
+    <source src="./assets/hero-desert.webm" type="video/webm">
+    <source src="./assets/hero-desert.mp4" type="video/mp4">
+  </video>
+
+  <div class="nyg-hero-ribbon" aria-hidden="true">As seen under the stars ★★★★★</div>
+  <div class="nyg-hero-overlay">
+    <div class="nyg-hero-title">TiniriCamp — New Year desert magic</div>
+    <div class="nyg-hero-cta">View gallery</div>
+  </div>
+</button>
+
+
+    <!-- ITINERARY -->
+    <section aria-labelledby="itinerary-title">
+      <div class="section-head">
+        <h2 id="itinerary-title">Itinerary</h2>
+        <p class="muted">A simple plan for an unforgettable New Year in the desert.</p>
+      </div>
+      <div class="itinerary">
+        <article class="day">
+          <span class="badge">Day 1</span>
+          <h3>Experiencing the desert with workshops</h3>
+          <p>Arrive, settle in at camp, and join curated desert workshops to connect with the landscape.</p>
+        </article>
+        <article class="day">
+          <span class="badge">Day 2</span>
+          <h3>Paint workshop + private proposal moments</h3>
+          <p>Create your own desert-inspired artwork and book optional private time for special proposals.</p>
+        </article>
+        <article class="day">
+          <span class="badge">Day 3</span>
+          <h3>Closing night with DJ Guesmi</h3>
+          <p>Celebrate New Year’s in the dunes with DJ Guesmi and a magical closing party under the stars.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+   <!-- ===================== GALLERY — Photos & Video (Premium) ===================== -->
+<section class="ny-gallery" aria-labelledby="ny-gallery-title">
+  <div class="nyg-head">
+    <h2 id="ny-gallery-title">Gallery — Photos & Video</h2>
+    <p class="nyg-sub">A glimpse of TiniriCamp ambience and DJ Guesmi’s night energy.</p>
+  </div>
+
+  <!-- Featured hero tile -->
+  <button class="nyg-hero" type="button" data-open="0" aria-label="Open gallery: TiniriCamp at sunset from the dunes">
+    <div class="nyg-hero-img" role="img" aria-label="TiniriCamp at sunset from the dunes"></div>
+    <div class="nyg-hero-ribbon" aria-hidden="true">As seen under the stars ★★★★★</div>
+    <div class="nyg-hero-overlay">
+      <div class="nyg-hero-title">TiniriCamp — New Year desert magic</div>
+      <div class="nyg-hero-cta">View gallery</div>
+    </div>
+  </button>
+
+  <!-- Masonry-like responsive grid (keeps DOM/tab order) -->
+  <div class="nyg-grid" role="list">
+    <!-- Card 2 -->
+    <button class="nyg-card" role="listitem" type="button" data-open="1" aria-label="Open: Tents at dusk under a red sky">
+      <figure class="nyg-media nyg-img aspect-4-3">
+        <img loading="lazy" src="./assets/tiniri-2.png" alt="Tents at dusk under a red sky / Tentes au crépuscule sous un ciel rouge">
+      </figure>
+      <div class="nyg-cap">
+        <span>“Tents at dusk under a red sky”</span>
+        <span class="nyg-fr">“Tentes au crépuscule sous un ciel rouge”</span>
+      </div>
+    </button>
+
+    <!-- Card 3 -->
+    <button class="nyg-card" role="listitem" type="button" data-open="2" aria-label="Open: Circle view at golden hour">
+      <figure class="nyg-media nyg-img aspect-1-1">
+        <img loading="lazy" src="./assets/tiniri-3.png" alt="Circle view at golden hour / Vue circulaire à l’heure dorée">
+      </figure>
+      <div class="nyg-cap">
+        <span>“Circle view at golden hour”</span>
+        <span class="nyg-fr">“Vue circulaire à l’heure dorée”</span>
+      </div>
+    </button>
+
+    <!-- Card 4 (DJ) -->
+    <button class="nyg-card" role="listitem" type="button" data-open="3" aria-label="Open: DJ Guesmi — night crowd and lights">
+      <figure class="nyg-media nyg-img aspect-16-9">
+        <img loading="lazy" src="./assets/dj-guesmi.png" alt="DJ Guesmi — night crowd and lights / DJ Guesmi — foule et lumières nocturnes">
+      </figure>
+      <div class="nyg-cap">
+        <span>“DJ Guesmi — night crowd and lights”</span>
+        <span class="nyg-fr">“DJ Guesmi — foule et lumières nocturnes”</span>
+      </div>
+    </button>
+
+    <!-- Card 5 (Video) -->
+    <button class="nyg-card nyg-video" role="listitem" type="button" data-open="4" aria-label="Open video: New Year vibe — sample clip">
+      <figure class="nyg-media nyg-img aspect-16-9">
+        <img loading="lazy" src="./assets/tiniri-1.png" alt="Video thumbnail: New Year vibe — sample clip / Ambiance Nouvel An — extrait">
+        <span class="nyg-play" aria-hidden="true">▶</span>
+      </figure>
+      <div class="nyg-cap">
+        <span>“New Year vibe — sample clip”</span>
+        <span class="nyg-fr">“Ambiance Nouvel An — extrait”</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Conversion strip -->
+  <div class="nyg-convert">
+    <p class="nyg-social">Over 120 travelers celebrated New Year with us last season.</p>
+    <div class="nyg-cta-row">
+      <a class="nyg-btn nyg-btn-primary" href="#booking">Book your place</a>
+      <a class="nyg-btn nyg-btn-ghost" href="https://wa.me/21600000000" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+    <p class="nyg-availability">Limited tents for New Year — secure your spot.</p>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="nyg-lightbox" aria-hidden="true" aria-label="Media viewer" role="dialog">
+    <div class="nyg-backdrop" data-close></div>
+    <div class="nyg-modal" role="document">
+      <button class="nyg-close" type="button" title="Close (Esc)" aria-label="Close (Esc)" data-close>✕</button>
+      <button class="nyg-nav nyg-prev" type="button" title="Previous (←)" aria-label="Previous (←)" data-prev>‹</button>
+      <button class="nyg-nav nyg-next" type="button" title="Next (→)" aria-label="Next (→)" data-next>›</button>
+
+      <div class="nyg-stage" aria-live="polite">
+        <!-- media is rendered here -->
+      </div>
+      <div class="nyg-meta">
+        <div class="nyg-captions">
+          <div class="nyg-cap-en"></div>
+          <div class="nyg-cap-fr"></div>
+        </div>
+        <div class="nyg-count" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===================== Scoped styles ===================== */
+  .ny-gallery { --blue:#1565c0; --blueD:#0d47a1; --gold:#ffb300; --bg:#f5f7fb; --ink:#122033; --muted:#637187; --card:#fff; --rad:16px; --shadow:0 14px 34px rgba(15,23,42,.14); }
+  .ny-gallery * { box-sizing:border-box }
+
+  .nyg-head { display:grid; gap:.4rem; margin-bottom:1rem; }
+  .nyg-head h2 { margin:0; font-size:1.35rem; color:var(--ink); }
+  .nyg-sub { margin:0; color:var(--muted); }
+
+  /* Hero */
+  .nyg-hero {
+    position:relative; display:block; width:100%; border:0; padding:0; cursor:pointer;
+    border-radius:22px; overflow:hidden; box-shadow:var(--shadow); background:#000;
+    isolation:isolate;
+  }
+  .nyg-hero-img {
+    width:100%; aspect-ratio: 16/9; background:url('./assets/tiniri-1.png') center/cover no-repeat;
+    filter:saturate(105%) contrast(102%);
+  }
+  .nyg-hero-ribbon {
+    position:absolute; top:16px; left:16px; padding:.35rem .6rem; font-size:.82rem; font-weight:700;
+    color:#fff; border-radius:999px;
+    background:linear-gradient(135deg, var(--blueD), var(--gold));
+    box-shadow:0 10px 24px rgba(13,71,161,.35);
+  }
+  .nyg-hero-overlay {
+    position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:space-between; gap:.75rem;
+    padding:1rem 1rem;
+    background:linear-gradient(12deg, rgba(13,71,161,.55), transparent 45%),
+               linear-gradient(180deg, rgba(0,0,0,.35), transparent 40%);
+    color:#fff;
+  }
+  .nyg-hero-title { font-size:1.15rem; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+  .nyg-hero-cta {
+    margin-left:auto; font-weight:800; padding:.6rem .9rem; border-radius:999px;
+    background:linear-gradient(135deg,var(--blue),var(--blueD)); box-shadow:0 10px 24px rgba(21,101,192,.35);
+  }
+
+  /* Grid */
+  .nyg-grid {
+    margin-top:12px;
+    display:grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap:.75rem;
+  }
+  /* Responsive spans for a classy masonry-like feel while preserving DOM order */
+  .nyg-card {
+    position:relative; border:0; padding:0; background:transparent; text-align:left; cursor:pointer;
+    border-radius:16px; overflow:hidden; box-shadow:var(--shadow); isolation:isolate;
+  }
+  .nyg-card:nth-child(1){ grid-column: span 6; }
+  .nyg-card:nth-child(2){ grid-column: span 3; }
+  .nyg-card:nth-child(3){ grid-column: span 3; }
+  .nyg-card:nth-child(4){ grid-column: span 6; }
+
+  @media (max-width: 1000px){
+    .nyg-card { grid-column: span 6; }
+  }
+  @media (max-width: 640px){
+    .nyg-card { grid-column: 1 / -1; }
+  }
+
+  .nyg-media { position:relative; background:#000; }
+  .nyg-img img { width:100%; height:auto; display:block; object-fit:cover; }
+  .aspect-1-1 { aspect-ratio: 1 / 1; }
+  .aspect-4-3 { aspect-ratio: 4 / 3; }
+  .aspect-16-9 { aspect-ratio: 16 / 9; }
+
+  /* Hover shine + lift */
+  .nyg-card::before {
+    content:""; position:absolute; inset:-20%; transform:skewX(-20deg) translateX(-120%);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
+    opacity:0; pointer-events:none;
+  }
+  .nyg-card, .nyg-hero {
+    transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+  }
+  .nyg-card:hover { transform: translateY(-2px); }
+  .nyg-card:hover::before { animation: nygShine .9s ease forwards; }
+  .nyg-hero:hover { transform: translateY(-2px); }
+
+  @keyframes nygShine {
+    to { transform:skewX(-20deg) translateX(140%); opacity:1; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .nyg-card, .nyg-hero { transition:none }
+    .nyg-card:hover::before { animation: none }
+  }
+
+  /* Captions */
+  .nyg-cap {
+    position:absolute; left:0; right:0; bottom:0;
+    padding:.55rem .7rem; color:#fff; font-size:.9rem; line-height:1.25;
+    background:linear-gradient(180deg, transparent, rgba(0,0,0,.55));
+    opacity:0; transition:opacity .18s ease;
+    text-shadow:0 1px 8px rgba(0,0,0,.45);
+  }
+  .nyg-card:focus .nyg-cap,
+  .nyg-card:hover .nyg-cap { opacity:1; }
+  .nyg-fr { opacity:.9; font-size:.85em; display:block }
+
+  /* Video play badge */
+  .nyg-video .nyg-play {
+    position:absolute; inset:auto auto 50% 50%; transform:translate(-50%,50%);
+    background:rgba(0,0,0,.55); border:2px solid #fff; color:#fff; border-radius:999px;
+    width:60px; height:60px; display:grid; place-items:center; font-weight:800; font-size:1.1rem;
+    box-shadow:0 10px 24px rgba(0,0,0,.45);
+  }
+
+  /* Conversion strip */
+  .nyg-convert {
+    margin-top:1rem; border:1px solid rgba(148,163,184,.35); border-radius:14px; padding:1rem;
+    background:linear-gradient(135deg, rgba(21,101,192,.06), rgba(255,179,0,.06));
+    display:grid; gap:.4rem; text-align:center;
+  }
+  .nyg-social { margin:0; color:#2b3a4b; font-weight:700 }
+  .nyg-availability { margin:0; color:#475569; font-size:.95rem }
+  .nyg-cta-row { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; }
+  .nyg-btn { border:1px solid rgba(148,163,184,.45); padding:.6rem 1rem; border-radius:999px; text-decoration:none; font-weight:800; }
+  .nyg-btn-primary { color:#fff; background:linear-gradient(135deg, var(--blue), var(--blueD)); box-shadow:0 10px 24px rgba(21,101,192,.35); border:none; }
+  .nyg-btn-ghost { color:#0f172a; background:#fff; }
+
+  /* Lightbox modal */
+  .nyg-lightbox[aria-hidden="true"] { display:none }
+  .nyg-lightbox {
+    position:fixed; inset:0; z-index:1000; display:grid; place-items:center;
+  }
+  .nyg-backdrop {
+    position:absolute; inset:0; background:rgba(2,6,23,.6); backdrop-filter: blur(6px);
+  }
+  .nyg-modal {
+    position:relative; width:min(100%, 980px); margin:1rem; background:rgba(255,255,255,.98);
+    border-radius:16px; box-shadow:0 24px 64px rgba(2,6,23,.45); overflow:hidden;
+    display:grid; grid-template-rows: 1fr auto;
+  }
+  .nyg-stage { background:#000; display:grid; place-items:center; }
+  .nyg-stage img, .nyg-stage iframe { max-width:100%; max-height:74vh; width:auto; height:auto; }
+  .nyg-meta { display:flex; justify-content:space-between; gap:.75rem; align-items:center; padding:.6rem .75rem; color:#0f172a; background:#f8fafc; }
+  .nyg-captions { display:grid; line-height:1.25; }
+  .nyg-cap-en { font-weight:700 }
+  .nyg-cap-fr { opacity:.9; font-size:.95em }
+
+  .nyg-close {
+    position:absolute; top:.5rem; right:.5rem; z-index:2;
+    border:none; background:#fff; border-radius:999px; width:40px; height:40px; font-size:1rem; font-weight:800;
+    box-shadow:0 8px 18px rgba(15,23,42,.25); cursor:pointer;
+  }
+  .nyg-nav {
+    position:absolute; top:50%; transform:translateY(-50%);
+    border:none; background:rgba(255,255,255,.9); width:44px; height:64px; font-size:1.6rem; font-weight:900; cursor:pointer;
+    box-shadow:0 10px 24px rgba(15,23,42,.3);
+  }
+  .nyg-prev { left:.5rem; border-radius:12px 6px 6px 12px; }
+  .nyg-next { right:.5rem; border-radius:6px 12px 12px 6px; }
+
+  @media (max-width: 560px){
+    .nyg-modal { margin:.5rem }
+    .nyg-nav { width:38px; height:56px; }
+  }
+
+  /* Prevent background scroll when modal open — add/remove via JS */
+  body.nyg-locked { overflow:hidden }
+</style>
+
+<script>
+  (function(){
+    // Media data (order matters)
+    const MEDIA = [
+      {
+        type: 'image',
+        src: './assets/tiniri-1.png',
+        alt: 'TiniriCamp at sunset from the dunes',
+        captionEN: 'TiniriCamp at sunset from the dunes',
+        captionFR: 'TiniriCamp au coucher du soleil depuis les dunes'
+      },
+      {
+        type: 'image',
+        src: './assets/tiniri-2.png',
+        alt: 'Tents at dusk under a red sky',
+        captionEN: 'Tents at dusk under a red sky',
+        captionFR: 'Tentes au crépuscule sous un ciel rouge'
+      },
+      {
+        type: 'image',
+        src: './assets/tiniri-3.png',
+        alt: 'Circle view at golden hour',
+        captionEN: 'Circle view at golden hour',
+        captionFR: 'Vue circulaire à l’heure dorée'
+      },
+      {
+        type: 'image',
+        src: './assets/dj-guesmi.png',
+        alt: 'DJ Guesmi — night crowd and lights',
+        captionEN: 'DJ Guesmi — night crowd and lights',
+        captionFR: 'DJ Guesmi — foule et lumières nocturnes'
+      },
+      {
+        type: 'video',
+        src: 'https://www.youtube.com/embed/VIDEO_ID?rel=0',
+        alt: 'New Year vibe — sample clip',
+        captionEN: 'New Year vibe — sample clip',
+        captionFR: 'Ambiance Nouvel An — extrait'
+      }
+    ];
+
+    const $root   = document.querySelector('.ny-gallery');
+    const $hero   = $root.querySelector('.nyg-hero');
+    const $grid   = $root.querySelector('.nyg-grid');
+    const $lb     = $root.querySelector('.nyg-lightbox');
+    const $stage  = $lb.querySelector('.nyg-stage');
+    const $capEn  = $lb.querySelector('.nyg-cap-en');
+    const $capFr  = $lb.querySelector('.nyg-cap-fr');
+    const $count  = $lb.querySelector('.nyg-count');
+    const $btnClose = $lb.querySelector('[data-close]');
+    const $btnPrev  = $lb.querySelector('[data-prev]');
+    const $btnNext  = $lb.querySelector('[data-next]');
+    const $backdrop = $lb.querySelector('.nyg-backdrop');
+
+    let current = 0;
+    let lastFocused = null;
+    let currentIframeSrc = null;
+
+    // Open lightbox at index
+    function open(index){
+      current = index;
+      lastFocused = document.activeElement;
+      render();
+      $lb.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('nyg-locked');
+      // focus close for accessibility
+      $btnClose.focus();
+      // preload neighbors
+      preloadNeighbor(current - 1);
+      preloadNeighbor(current + 1);
+    }
+
+    function close(){
+      // stop video if any
+      const iframe = $stage.querySelector('iframe');
+      if (iframe) {
+        iframe.src = ''; // unload
+      }
+      $lb.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('nyg-locked');
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    function next(){
+      current = (current + 1 + MEDIA.length) % MEDIA.length;
+      render();
+      preloadNeighbor(current + 1);
+    }
+
+    function prev(){
+      current = (current - 1 + MEDIA.length) % MEDIA.length;
+      render();
+      preloadNeighbor(current - 1);
+    }
+
+    function render(){
+      const item = MEDIA[current];
+      $stage.innerHTML = '';
+      if (item.type === 'image') {
+        const img = new Image();
+        img.alt = item.alt || '';
+        img.loading = 'eager';
+        img.decoding = 'async';
+        img.src = item.src;
+        $stage.appendChild(img);
+      } else {
+        // video
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('allowfullscreen','');
+        iframe.setAttribute('title', item.alt || 'Video');
+        iframe.setAttribute('allow', 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        // ensure fresh load
+        currentIframeSrc = item.src;
+        iframe.src = currentIframeSrc;
+        iframe.style.width = '100%';
+        iframe.style.height = 'min(74vh, 560px)';
+        iframe.style.border = '0';
+        $stage.appendChild(iframe);
+      }
+      $capEn.textContent = item.captionEN || '';
+      $capFr.textContent = item.captionFR || '';
+      $count.textContent = (current + 1) + ' / ' + MEDIA.length;
+    }
+
+    function preloadNeighbor(i){
+      if (i < 0 || i >= MEDIA.length) return;
+      const m = MEDIA[i];
+      if (m.type === 'image') {
+        const img = new Image();
+        img.src = m.src;
+      }
+    }
+
+    // Focus trap
+    function trapFocus(e){
+      if ($lb.getAttribute('aria-hidden') === 'true') return;
+      if (e.key !== 'Tab') return;
+      const focusables = $lb.querySelectorAll('button, [href], iframe, [tabindex]:not([tabindex="-1"])');
+      const list = Array.from(focusables).filter(el => !el.hasAttribute('disabled'));
+      if (!list.length) return;
+      const first = list[0], last = list[list.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+
+    // Listeners
+    $hero.addEventListener('click', () => open(0));
+    $grid.addEventListener('click', (e)=>{
+      const btn = e.target.closest('[data-open]');
+      if (!btn) return;
+      open(parseInt(btn.getAttribute('data-open'), 10));
+    });
+
+    $btnClose.addEventListener('click', close);
+    $backdrop.addEventListener('click', close);
+    $btnPrev.addEventListener('click', prev);
+    $btnNext.addEventListener('click', next);
+
+    window.addEventListener('keydown', (e)=>{
+      if ($lb.getAttribute('aria-hidden') === 'true') return;
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+    });
+
+    window.addEventListener('keydown', trapFocus, true);
+  })();
+</script>
+<!-- ===================== /GALLERY — END ===================== -->
+
+
+
+    <!-- BOOKING -->
+    <!-- BOOKING (Google Form redirect) -->
+<section id="booking" aria-labelledby="booking-title">
+  <div class="section-head">
+    <h2 id="booking-title">Book your place</h2>
+    <p class="muted">Submit your details in our Google Form and we’ll call you to confirm.</p>
+  </div>
+
+  <div class="booking" role="region" aria-label="New Year booking">
+    <aside class="sel" aria-label="Selected event">
+      <div class="chip">Upcoming • New Year</div>
+      <h3>New Year Desert Experience — TiniriCamp</h3>
+      <p>3 days / 2 nights • Tunisian Desert</p>
+      <p class="muted">Workshops, art, and a closing night with DJ Guesmi.</p>
+    </aside>
+
+    <div style="display:grid;place-items:center;gap:.75rem;padding:.5rem 0">
+      <!-- 🔗 Replace the URL below with YOUR Google Form link -->
+      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe9zMIIv6BdEYrHD9j6qOXs8ZfxaQUl34pScPVhdmKLZzSA8Q/viewform?usp=dialog"
+         target="_blank" rel="noopener">
+        Book on Google Form →
+      </a>
+      <a class="btn btn-ghost" href="https://wa.me/21600000000" target="_blank" rel="noopener">
+        WhatsApp us
+      </a>
+      <div class="hint">After you submit the form, our team will call you to confirm and finalize details.</div>
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+      <span>© <span id="year"></span> Aryam Voyage</span>
+      <span>
+        contact@aryamvoyage.com • +216 99 517 295 •
+        <a href="https://wa.me/21600000000" target="_blank" rel="noopener">WhatsApp</a>
+      </span>
+    </footer>
+  </main>
+
+  <script>
+  // Smooth scroll for internal anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const id=a.getAttribute('href');
+      if(id.length>1){
+        e.preventDefault();
+        const el=document.querySelector(id);
+        if(!el) return;
+        const y=el.getBoundingClientRect().top + window.scrollY - 72;
+        window.scrollTo({ top:y, behavior:"smooth" });
+      }
+    });
+  });
+
+  // Footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
